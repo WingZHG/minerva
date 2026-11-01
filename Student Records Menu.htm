@@ -1,0 +1,382 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Pragma" name="Cache-Control" content="no-cache">
+<meta http-equiv="Cache-Control" name="Cache-Control" content="no-cache">
+<link rel="stylesheet" href="Student%20Records%20Menu_files/web_defaultapp_kqBw.css" type="text/css">
+<link rel="stylesheet" href="Student%20Records%20Menu_files/web_defaultprint_kqBw.css" type="text/css" media="print">
+<title>Student Records Menu</title>
+<meta http-equiv="Content-Script-Type" name="Default_Script_Language" content="text/javascript">
+<script language="JavaScript" type="text/javascript">
+<!-- Hide JavaScript from older browsers 
+window.onunload = function() {submitcount=0;}
+var submitcount=0;
+function checkSubmit() {
+if (submitcount == 0)
+ {
+ submitcount++;
+ return true;
+ }
+else
+ {
+alert("Your changes have already been submitted.");
+ return false;
+ }
+}
+// End script hiding -->
+</script>
+<script language="JavaScript" type="text/javascript">
+<!-- Hide JavaScript from older browsers 
+// Function to open a window
+function windowOpen(window_url) {
+ helpWin = window.open(window_url,'','toolbar=yes,status=no,scrollbars=yes,menubar=yes,resizable=yes,directories=no,location=no,width=350,height=400');
+ if (document.images) { 
+ if (helpWin) helpWin.focus()
+ }
+}
+// End script hiding -->
+</script>
+<link href="Student%20Records%20Menu_files/content_kqBw.css" rel="stylesheet" type="text/css"></head>
+<body>
+<div class="headerwrapperdiv">
+<div class="pageheaderdiv1">
+<a href="#main_content" onmouseover="window.status='Go to Main Content'; return true" onmouseout="window.status=''; return true" onfocus="window.status='Go to Main Content'; return true" onblur="window.status=''; return true" class="skiplinks">Go to Main Content</a>
+<h1>Minerva</h1></div><div class="headerlinksdiv">
+<span class="pageheaderlinks2">
+<map name="Module_Navigation_Links_H" title="Module Navigation Links">
+<p>
+<a href="#skip_Module_Navigation_Links_H" onmouseover="window.status='Skip Module Navigation Links'; return true" onmouseout="window.status=''; return true" onfocus="window.status='Skip Module Navigation Links'; return true" onblur="window.status=''; return true" class="skiplinks">Skip Module Navigation Links</a>
+</p><table class="plaintable" summary="This is main table for displaying Tab Items." width="100%" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr>
+<td class="pldefault">
+<table class="plaintable" summary="This table displays Tab Items." cellspacing="0" cellpadding="0" border="0">
+<tbody><tr>
+<td class="taboff" height="22">
+<a href="https://horizon.mcgill.ca/pban1/twbkwbis.P_GenMenu?name=bmenu.P_MainMnu" onmouseover="window.status='Main menu'; return true" onmouseout="window.status=''; return true" onfocus="window.status='Main menu'; return true" onblur="window.status=''; return true">MAIN MENU</a>
+</td>
+<td class="bgtaboff" height="22" valign="top" align="right">
+<img src="Student%20Records%20Menu_files/web_tab_corner_right_kqBw.gif" alt="Tab Corner Right" class="headerImg" title="Tab Corner Right" name="web_tab_corner_right" hspace="0" vspace="0" border="0" height="20" width="8">
+</td>
+<td class="taboff" height="22">
+<a href="https://horizon.mcgill.ca/pban1/twbkwbis.P_GenMenu?name=bmenu.P_FinanceMnu" onmouseover="window.status='Finance'; return true" onmouseout="window.status=''; return true" onfocus="window.status='Finance'; return true" onblur="window.status=''; return true">Finance</a>
+</td>
+<td class="bgtaboff" height="22" valign="top" align="right">
+<img src="Student%20Records%20Menu_files/web_tab_corner_right_kqBw.gif" alt="Tab Corner Right" class="headerImg" title="Tab Corner Right" name="web_tab_corner_right" hspace="0" vspace="0" border="0" height="20" width="8">
+</td>
+<td class="taboff" height="22">
+<a href="https://horizon.mcgill.ca/pban1/twbkwbis.P_GenMenu?name=bmenu.P_PersonalMnu" onmouseover="window.status='Personal Menu'; return true" onmouseout="window.status=''; return true" onfocus="window.status='Personal Menu'; return true" onblur="window.status=''; return true">Personal</a>
+</td>
+<td class="bgtaboff" height="22" valign="top" align="right">
+<img src="Student%20Records%20Menu_files/web_tab_corner_right_kqBw.gif" alt="Tab Corner Right" class="headerImg" title="Tab Corner Right" name="web_tab_corner_right" hspace="0" vspace="0" border="0" height="20" width="8">
+</td>
+<td class="tabon" height="22">
+<a href="https://horizon.mcgill.ca/pban1/twbkwbis.P_GenMenu?name=bmenu.P_StuMainMnu" onmouseover="window.status='Student Menu'; return true" onmouseout="window.status=''; return true" onfocus="window.status='Student Menu'; return true" onblur="window.status=''; return true">Student</a>
+</td>
+<td class="bgtabon" height="22" valign="top" align="right">
+<img src="Student%20Records%20Menu_files/web_tab_corner_right_kqBw.gif" alt="Tab Corner Right" class="headerImg" title="Tab Corner Right" name="web_tab_corner_right" hspace="0" vspace="0" border="0" height="20" width="8">
+</td>
+<td class="taboff" height="22">
+<a href="https://horizon.mcgill.ca/pban1/twbkwbis.P_GenMenu?name=pmenu.P_MainMnu" onmouseover="window.status='Employee'; return true" onmouseout="window.status=''; return true" onfocus="window.status='Employee'; return true" onblur="window.status=''; return true">Employee</a>
+</td>
+<td class="bgtaboff" height="22" valign="top" align="right">
+<img src="Student%20Records%20Menu_files/web_tab_corner_right_kqBw.gif" alt="Tab Corner Right" class="headerImg" title="Tab Corner Right" name="web_tab_corner_right" hspace="0" vspace="0" border="0" height="20" width="8">
+</td>
+<td class="taboff" height="22">
+<a href="https://horizon.mcgill.ca/pban1/twbkwbis.P_GenMenu?name=bmenu.P_ApplMnu" onmouseover="window.status='Applicant Menu'; return true" onmouseout="window.status=''; return true" onfocus="window.status='Applicant Menu'; return true" onblur="window.status=''; return true">Applicant</a>
+</td>
+<td class="bgtaboff" height="22" valign="top" align="right">
+<img src="Student%20Records%20Menu_files/web_tab_corner_right_kqBw.gif" alt="Tab Corner Right" class="headerImg" title="Tab Corner Right" name="web_tab_corner_right" hspace="0" vspace="0" border="0" height="20" width="8">
+</td>
+<td class="taboff" height="22">
+<a href="https://horizon.mcgill.ca/pban1/twbkwbis.P_GenMenu?name=bmenu.P_BsacMnu" onmouseover="window.status='Financial Aid/Awards'; return true" onmouseout="window.status=''; return true" onfocus="window.status='Financial Aid/Awards'; return true" onblur="window.status=''; return true">Financial Aid/Awards</a>
+</td>
+<td class="bgtaboff" height="22" valign="top" align="right">
+<img src="Student%20Records%20Menu_files/web_tab_corner_right_kqBw.gif" alt="Tab Corner Right" class="headerImg" title="Tab Corner Right" name="web_tab_corner_right" hspace="0" vspace="0" border="0" height="20" width="8">
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+<td class="bgtabon" width="100%" colspan="2"><img src="Student%20Records%20Menu_files/web_transparent_kqBw.gif" alt="Transparent Image" class="headerImg" title="Transparent Image" name="web_transparent" hspace="0" vspace="0" border="0" height="3" width="10"></td></tr></tbody></table>
+</map>
+</span>
+<a name="skip_Module_Navigation_Links_H"></a>
+</div>
+<table class="plaintable" summary="This table displays Menu Items and Banner Search textbox." width="100%">
+<tbody><tr>
+<td class="pldefault">
+<div class="headerlinksdiv2">
+<form action="/pban1/twbksrch.P_ShowResults" method="post">
+Search
+<span class="fieldlabeltextinvisible"><label for="keyword_in_id"><span class="fieldlabeltext">Search</span></label></span>
+<input type="text" name="KEYWRD_IN" size="20" maxlength="65" id="keyword_in_id">
+<input type="submit" value="Go">
+</form>
+</div>
+</td>
+<td class="pldefault"><p class="rightaligntext">
+<span class="pageheaderlinks">
+<a href="https://horizon.mcgill.ca/fr-PBAN1/twbkwbis.P_GenMenu?name=bmenu.P_AdminMnu" class="submenulinktext2">FRANÇAIS</a>
+|
+<a href="https://horizon.mcgill.ca/pban1/twbkwbis.P_GenMenu?name=bmenu.P_StuMainMnu" class="submenulinktext2" id="ssbbackurl">MENU</a>
+|
+<a href="https://horizon.mcgill.ca/pban1/twbksite.P_DispSiteMap?menu_name_in=bmenu.P_MainMnu&amp;depth_in=2&amp;columns_in=3" accesskey="2" class="submenulinktext2">SITE MAP</a>
+|
+<a href="https://webforms.mcgill.ca/Minerva-help/sis_help/sa_main_menu.htm" accesskey="H" onclick="popup = window.open('https://webforms.mcgill.ca/Minerva-help/sis_help/sa_main_menu.htm', 'PopupPage','height=500,width=450,scrollbars=yes,resizable=yes'); return false" target="_blank" onmouseover="window.status='';  return true" onmouseout="window.status=''; return true" onfocus="window.status='';  return true" onblur="window.status=''; return true" class="submenulinktext2">HELP</a>
+|
+<a href="https://horizon.mcgill.ca/pban1/twbkwbis.P_Logout" accesskey="3" class="submenulinktext2">EXIT</a>
+</span>
+</p></td>
+</tr>
+</tbody></table>
+</div>
+<div class="pagetitlediv">
+<table class="plaintable" summary="This table displays title and static header displays." width="100%">
+<tbody><tr>
+<td class="pldefault">
+<h2>Student Records Menu</h2>
+</td>
+<td class="pldefault">
+&nbsp;
+</td>
+<td class="pldefault"><p class="rightaligntext">
+</p><div class="staticheaders">
+</div>
+</td>
+</tr>
+<tr>
+<td class="bg3" width="100%" colspan="3"><img src="Student%20Records%20Menu_files/web_transparent_kqBw.gif" alt="Transparent Image" class="headerImg" title="Transparent Image" name="web_transparent" hspace="0" vspace="0" border="0" height="3" width="10"></td>
+</tr>
+</tbody></table>
+<a name="main_content"></a>
+</div>
+<div class="pagebodydiv">
+<!--  ** END OF twbkwbis.P_OpenDoc **  -->
+<script language="JavaScript" type="text/javascript">
+<!-- Hide JavaScript from older browsers 
+function ShowPopup(SomeURL) {
+   var agt=navigator.userAgent.toLowerCase();
+   var ScreenWidth, ScreenHeight;
+   var WindowTop, WindowLeft;
+   var PopupWindow;
+   var isIE;
+            
+   isIE = (agt.indexOf("msie") != -1);
+
+   ScreenHeight = 0;
+   ScreenWidth  = 0;
+   WindowTop    = 0;
+   WindowLeft   = 0;
+   var WindowWidth   = 700;
+   var WindowHeight  = 600;
+
+   if (isIE) {
+     ScreenWidth  = document.body.clientWidth;
+     ScreenHeight = document.body.clientHeight; 
+   }
+   else{
+     if (window.innerWidth) ScreenWidth = window.innerWidth;
+     if (window.innerHeight) ScreenHeight = window.innerHeight; 
+   }
+
+   Window_Top  = ScreenHeight - WindowHeight - 20;
+   Window_Left = ScreenWidth  - WindowWidth  - 20;
+               
+   PopupWindow = window.open(SomeURL, '_blank', 'scrollbars=yes, resizable=yes, menubar=yes, status=yes, location=yes, directories=no, toolbar=yes, width=' +WindowWidth +',height='+WindowHeight+',top='   +Window_Top  +',left='  +Window_Left);
+   PopupWindow.focus();
+}
+
+// End script hiding -->
+</script>
+<div class="infotextdiv"><table class="infotexttable" summary="This layout table contains information that may be helpful in understanding the content and functionality of this page.  It could be a brief set of instructions, a description of error messages, or other special information."><tbody><tr><td class="indefault"><img src="Student%20Records%20Menu_files/web_info_cascade_kqBw.png" alt="Information" class="headerImg" title="Information" name="web_info" hspace="0" vspace="0" border="0" height="12" width="14"></td><td class="indefault"><span class="infotext"> <!--<div style= "border:1px solid #CCC; color: #000000; padding:10px; background-color: #ffffcc; width:800px;><p style="margin:10px;"><font color="DD0000" size="2"><strong>IMPORTANT NOTE:</strong>  During the Fall 2024 Holiday Break, the <strong>ES Services (Enrolment Services eStore & MyCreds™)</strong> functionality will not be available from 17 December 2024 at 5:00 p.m. to Friday, 3 January 2025 at 9:00 a.m.</font>
+</div>-->
+
+<!--<div style= "border:1px solid #CCC; color: #000000; padding:10px; background-color: #ffffcc; width:800px;><p style="margin:10px;"><font color="DD0000" size="2"><strong>IMPORTANT NOTE:</strong>  As of March 31st, 2022, the Minerva Travel Registry has been replaced by the McGill Student Travel Registry. To learn more about the new tool, its features and registration process, please login to the student or staff section of the <a href="https://www.mcgill.ca/mcgillabroad/safety/registry">McGill Student Travel Registry</a> webpage.</b></font>
+</div>--></span></td></tr></tbody></table><p></p></div>
+<table class="menuplaintable" summary="This layout table holds the menu items">
+<tbody><tr>
+<td class="mpdefault">&nbsp;</td>
+<td class="mpdefault">
+<a href="https://horizon.mcgill.ca/pban1/bzsktran.P_Display_Form?user_type=S&amp;tran_type=V" class="submenulinktext2 " onmouseover="window.status='View Your Unofficial Transcript'; return true" onmouseout="window.status=''; return true" onfocus="window.status='View Your Unofficial Transcript'; return true" onblur="window.status=''; return true">View Your Unofficial Transcript</a>
+<br>
+<span class="menulinkdesctext ">View grades on your unofficial transcript.<p>
+</p></span></td>
+</tr>
+<tr>
+<td class="mpdefault">&nbsp;</td>
+<td class="mpdefault">
+<a href="./Proof of Enrolment Letters.htm" class="submenulinktext2 " onmouseover="window.status='Letters - Proof of Enrolment'; return true" onmouseout="window.status=''; return true" onfocus="window.status='Letters - Proof of Enrolment'; return true" onblur="window.status=''; return true">Letters - Proof of Enrolment</a>
+<br>
+<span class="menulinkdesctext "><!-- <font color="red"><b>NOTE: The Proof of Enrolment Letters functionality will be unavailable from Sunday, September 30, 2018 at 6:00 pm to Monday, October 1, 2018 at 9:00 am. Thank you for understanding.</b></font> <br> -->
+Generate proof of enrolment or graduation, RESP, and study permit renewal letters.
+<p>
+
+<!--Either bzskltat.P_Display_Form_Student
+OR
+twbkwbis.P_GenMenu?name=bmenu.P_AdminMnu -->
+</p></span></td>
+</tr>
+<tr>
+<td class="mpdefault">&nbsp;</td>
+<td class="mpdefault">
+<a href="https://horizon.mcgill.ca/pban1/bzskpror.p_display_form" class="submenulinktext2 ">ES Services (Enrolment Services eStore &amp; MyCreds™)</a>
+<br>
+<span class="menulinkdesctext ">Request an official transcript (electronic, archived...) a replacement or certified copy of your diploma, forms, or other documents.<br>
+<!--<font color="DD0000" size="2"><strong>HOLIDAY MESSAGE</strong>: This functionality is not available for ordering documents, including electronic official transcripts, between December 17, 2025, at 5:00 PM and January 5, 2026, at 9:00 AM inclusively.<br>Orders submitted by 17 December 2025 will be reviewed, processed and mailed (as possible) by Tuesday, 23 December 2025 at the latest. </font>
+-->
+<!--twbkwbis.P_GenMenu?name=bmenu.P_AdminMnu (Disabled) OR 
+
+bzskpror.p_display_form (Working)--></span>
+</td>
+</tr>
+<tr>
+<td class="mpdefault">&nbsp;</td>
+<td class="mpdefault">
+<a href="https://horizon.mcgill.ca/pban1/bzskmajr.P_Display_Form?curr_in=1" class="submenulinktext2 " onmouseover="window.status='Change Your Primary Curriculum (1st degree)'; return true" onmouseout="window.status=''; return true" onfocus="window.status='Change Your Primary Curriculum (1st degree)'; return true" onblur="window.status=''; return true">Change Your Primary Curriculum (1st degree)</a>
+<br>
+<span class="menulinkdesctext "><strong>Arts, B.A.&amp;Sc., Kinesiology, Management, and Science students only</strong>: Change your program, major, minor, honours, etc. 
+<ul>
+<li>Changes made in <em>April–November</em> are effective for the <strong>Fall Term</strong> onwards.</li>
+<li>Changes made in <em>December–February</em> are effective for the <strong>Winter Term</strong> onwards.</li>
+<li>To change your curriculum for the Summer Term, contact your Student Affairs Office or Service Point.</li>
+</ul><p>
+</p></span></td>
+</tr>
+<tr>
+<td class="mpdefault">&nbsp;</td>
+<td class="mpdefault">
+<a href="https://horizon.mcgill.ca/pban1/bzskmajr.P_Display_Form?curr_in=2" class="submenulinktext2 " onmouseover="window.status='Change Your Secondary Curriculum (2nd degree)'; return true" onmouseout="window.status=''; return true" onfocus="window.status='Change Your Secondary Curriculum (2nd degree)'; return true" onblur="window.status=''; return true">Change Your Secondary Curriculum (2nd degree)</a>
+<br>
+<span class="menulinkdesctext "><p>
+</p></span></td>
+</tr>
+<tr>
+<td class="mpdefault">&nbsp;</td>
+<td class="mpdefault">
+<a href="https://horizon.mcgill.ca/pban1/bzskagat.P_Display_App_Form?curr_in=1" class="submenulinktext2 " onmouseover="window.status='Apply for Graduation for Your Primary Curriculum (1st degree)'; return true" onmouseout="window.status=''; return true" onfocus="window.status='Apply for Graduation for Your Primary Curriculum (1st degree)'; return true" onblur="window.status=''; return true">Apply for Graduation for Your Primary Curriculum (1st degree)</a>
+<br>
+<span class="menulinkdesctext ">Apply in your final year: February (if you are completing your courses in April). Apply by November if you are completing your courses in December; by mid-May if you are completing your courses in August.
+<br>Missed your deadline?  Contact your <a href="http://www.mcgill.ca/students/advising/advisordirectory/" target="_blank">Faculty Student Affairs Office</a>
+<p>
+</p></span></td>
+</tr>
+<tr>
+<td class="mpdefault">&nbsp;</td>
+<td class="mpdefault">
+<a href="https://horizon.mcgill.ca/pban1/bzskagat.P_Display_App_Form?curr_in=2" class="submenulinktext2 " onmouseover="window.status='Apply for Graduation for Your Secondary Curriculum (2nd degree)'; return true" onmouseout="window.status=''; return true" onfocus="window.status='Apply for Graduation for Your Secondary Curriculum (2nd degree)'; return true" onblur="window.status=''; return true">Apply for Graduation for Your Secondary Curriculum (2nd degree)</a>
+<br>
+<span class="menulinkdesctext "><p>
+</p></span></td>
+</tr>
+<tr>
+<td class="mpdefault">&nbsp;</td>
+<td class="mpdefault">
+<a href="https://horizon.mcgill.ca/pban1/bzskgapr.p_stu_search" class="submenulinktext2 " onmouseover="window.status='Graduation Approval Query'; return true" onmouseout="window.status=''; return true" onfocus="window.status='Graduation Approval Query'; return true" onblur="window.status=''; return true">Graduation Approval Query</a>
+<br>
+<span class="menulinkdesctext ">Displays your graduation record at McGill during the graduation process; view convocation details. 
+<p>
+</p></span></td>
+</tr>
+<tr>
+<td class="mpdefault">&nbsp;</td>
+<td class="mpdefault">
+<a href="https://horizon.mcgill.ca/pban1/bzskdefr.P_DispStatus" class="submenulinktext2 " onmouseover="window.status='Deferred Exam Application'; return true" onmouseout="window.status=''; return true" onfocus="window.status='Deferred Exam Application'; return true" onblur="window.status=''; return true">Deferred Exam Application</a>
+<br>
+<span class="menulinkdesctext ">Apply to defer an exam or check the status of an application. <b><u>Special note for Summer courses</u></b>: the Minerva application for deferred exams for summer courses is <b>only</b> available for courses offered within the <b>Faculties of Arts and Science</b>.  If your course is offered by a different Faculty, please submit your application directly to that Faculty’s Student Affairs Office.<p>
+</p></span></td>
+</tr>
+<tr>
+<td class="mpdefault">&nbsp;</td>
+<td class="mpdefault">
+<a href="https://horizon.mcgill.ca/pban1/bzsksupp.P_Display_Student_Form" class="submenulinktext2 " onmouseover="window.status='Supplemental Exam Application'; return true" onmouseout="window.status=''; return true" onfocus="window.status='Supplemental Exam Application'; return true" onblur="window.status=''; return true">Supplemental Exam Application</a>
+<br>
+<span class="menulinkdesctext ">Apply to take a supplemental exam or check the status of your application. <br><br></span>
+</td>
+</tr>
+<tr>
+<td class="mpdefault">&nbsp;</td>
+<td class="mpdefault">
+<a href="https://horizon.mcgill.ca/pban1/bwckcapp.P_DispCurrent" class="submenulinktext2 " onmouseover="window.status='Degree Evaluation'; return true" onmouseout="window.status=''; return true" onfocus="window.status='Degree Evaluation'; return true" onblur="window.status=''; return true">Degree Evaluation</a>
+<br>
+<span class="menulinkdesctext ">Compare your academic record to the requirements of a specific program (<mark><strong>only</strong> for students admitted in <strong>Winter 2019 and earlier</strong></mark>).<br>
+<strong>THIS IS NOT AN OFFICIAL AUDIT AND MAY CONTAIN ERRORS</strong> (Degree audits are automatically generated. Students are encouraged to speak to their advisor to compare their academic record against specific program requirements). In some cases, courses with the S/U grading option are misinterpreted by the Degree Evaluation tool. <strong>Students that have applied the S/U grading option to non-elective courses should contact their program advisors to confirm their program requirements</strong>.<p></p></span>
+</td>
+</tr>
+<tr>
+<td class="mpdefault">&nbsp;</td>
+<td class="mpdefault">
+<a href="https://horizon.mcgill.ca/pban1/twbkwbis.P_GenMenu?name=bmenu.P_ExcStuAMnu" class="submenulinktext2 " onmouseover="window.status='Exchange/Study Away Menu'; return true" onmouseout="window.status=''; return true" onfocus="window.status='Exchange/Study Away Menu'; return true" onblur="window.status=''; return true">Exchange/Study Away Menu</a>
+<br>
+<span class="menulinkdesctext ">Enter and view student exchange applications.<p>
+
+
+</p></span></td>
+</tr>
+<tr>
+<td class="mpdefault">&nbsp;</td>
+<td class="mpdefault">
+<a href="https://horizon.mcgill.ca/pban1/twbkwbis.P_GenMenu?name=bmenu.P_FacTransferMnu" class="submenulinktext2 " onmouseover="window.status='bmenu.P_FacTransferMnu'; return true" onmouseout="window.status=''; return true" onfocus="window.status='bmenu.P_FacTransferMnu'; return true" onblur="window.status=''; return true">Faculty Transfers / Readmission Menu</a>
+<br>
+<span class="menulinkdesctext "><p>
+</p></span></td>
+</tr>
+<tr>
+<td class="mpdefault">&nbsp;</td>
+<td class="mpdefault">
+<a href="https://horizon.mcgill.ca/pban1/twbkwbis.P_GenMenu?name=bmenu.P_AdminMnu" class="submenulinktext2 " onmouseover="window.status='Request Printed/Official Transcript'; return true" onmouseout="window.status=''; return true" onfocus="window.status='Request Printed/Official Transcript'; return true" onblur="window.status=''; return true">Request Official Transcript</a>
+<br>
+<span class="menulinkdesctext "><font color="EE0000"><strong>IMPORTANT:</strong> This option is now available under the <strong>ES Services (Enrolment Services eStore &amp; MyCreds™)</strong> menu above where you can request an official transcript.</font><p></p>
+
+<!-- bmenu.P_Transcript_Menu (enabled) OR twbkwbis.P_GenMenu?name=bmenu.P_AdminMnu (Disabled) --></span>
+</td>
+</tr>
+<tr>
+<td class="mpdefault">&nbsp;</td>
+<td class="mpdefault">
+<a href="https://horizon.mcgill.ca/pban1/twbkwbis.P_GenMenu?name=bmenu.P_AdminMnu" class="submenulinktext2 " onmouseover="window.status='View History of Transcript Requests'; return true" onmouseout="window.status=''; return true" onfocus="window.status='View History of Transcript Requests'; return true" onblur="window.status=''; return true">View Printed Official Transcript Requests</a>
+<br>
+<span class="menulinkdesctext "><!--<font color=#EE0000><b>NOTE: View your printed official transcript request details, including the payment status.<p>-->
+
+<font color="#EE0000"><b>NOTE: This menu is disabled for maintenance.</b></font>
+
+<!--twbkwbis.P_GenMenu?name=bmenu.P_AdminMnu (Disabled) OR 
+
+bwskwtrr.p_disp_order_requests (Working)--></span>
+</td>
+</tr>
+</tbody></table>
+
+<!--  ** START OF twbkwbis.P_CloseDoc **  -->
+<table class="plaintable" summary="This is table displays line separator at end of the page." width="100%" cellspacing="0" cellpadding="0" border="0"><tbody><tr><td class="bgtabon" width="100%" colspan="2"><img src="Student%20Records%20Menu_files/web_transparent_kqBw.gif" alt="Transparent Image" class="headerImg" title="Transparent Image" name="web_transparent" hspace="0" vspace="0" border="0" height="3" width="10"></td></tr></tbody></table>
+<a href="#top" onmouseover="window.status='Skip to top of page'; return true" onmouseout="window.status=''; return true" onfocus="window.status='Skip to top of page'; return true" onblur="window.status=''; return true" class="skiplinks">Skip to top of page</a>
+<div class="footerbeforediv">
+
+</div>
+<div class="footerafterdiv">
+
+</div>
+<div class="globalafterdiv">
+
+</div>
+<div class="globalfooterdiv">
+
+</div>
+<div class="pagefooterdiv">
+<span class="releasetext">Release: 8.11</span>
+</div>
+<div class="poweredbydiv">
+</div>
+<div class="div1"></div>
+<div class="div2"></div>
+<div class="div3"></div>
+<div class="div4"></div>
+<div class="div5"></div>
+<div class="div6"></div>
+</div>
+<div class="banner_copyright"> <br><div style="border:1px solid #CCC; color: #000000; padding: 10px; margin:10px; background-color: #ffffcc; width:90%;&gt;
+&lt;font color=" ff0000"=""><b>NOTICE: Are you receiving "Page not working" or "Page can't be displayed" errors? </b> <br>If you are using Internet Explorer or Microsoft Edge, try switching to Chrome or Firefox. If the issue still persists, please report it to the IT Service Desk at (514) 398-3398. If you can take a screenshot from Minerva, it will also help us.</div>
+<h5>© 2026 Ellucian Company L.P. and its affiliates.<br></h5></div>
+
+
+</body><div></div></html>

@@ -1,0 +1,395 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Pragma" name="Cache-Control" content="no-cache">
+<meta http-equiv="Cache-Control" name="Cache-Control" content="no-cache">
+<link rel="stylesheet" href="css/web_defaultapp.css" type="text/css">
+<link rel="stylesheet" href="css/web_defaultprint.css" type="text/css" media="print">
+<title>User Login</title>
+<meta http-equiv="Content-Script-Type" name="Default_Script_Language" content="text/javascript">
+<script language="JavaScript" type="text/javascript">
+<!-- Hide JavaScript from older browsers 
+window.onunload = function() {submitcount=0;}
+var submitcount=0;
+function checkSubmit() {
+if (submitcount == 0)
+ {
+ submitcount++;
+ return true;
+ }
+else
+ {
+alert("Your changes have already been submitted.");
+ return false;
+ }
+}
+// End script hiding -->
+</script>
+<script language="JavaScript" type="text/javascript">
+<!-- Hide JavaScript from older browsers 
+// Function to open a window
+function windowOpen(window_url) {
+ helpWin = window.open(window_url,'','toolbar=yes,status=no,scrollbars=yes,menubar=yes,resizable=yes,directories=no,location=no,width=350,height=400');
+ if (document.images) { 
+ if (helpWin) helpWin.focus()
+ }
+}
+// End script hiding -->
+</script>
+<link href="User%20Login_files/content_Um7z.css" rel="stylesheet" type="text/css"></head>
+<body>
+<div class="headerwrapperdiv">
+<div class="pageheaderdiv1">
+<a href="#main_content" onmouseover="window.status='Go to Main Content'; return true" onmouseout="window.status=''; return true" onfocus="window.status='Go to Main Content'; return true" onblur="window.status=''; return true" class="skiplinks">Go to Main Content</a>
+<h1>Minerva</h1></div><div class="headerlinksdiv">
+</div>
+<table class="plaintable" summary="This table displays Menu Items and Banner Search textbox." width="100%">
+<tbody><tr>
+<td class="pldefault">
+<div class="headerlinksdiv2">
+&nbsp;
+</div>
+</td>
+<td class="pldefault"><p class="rightaligntext">
+<span class="pageheaderlinks">
+<a href="https://horizon.mcgill.ca/fr-PBAN1/twbkwbis.P_WWWLogin" class="submenulinktext2">FRANÇAIS</a>
+|
+<a href="https://webforms.mcgill.ca/Minerva-help/gen_help/login.htm" accesskey="H" onclick="popup = window.open('https://webforms.mcgill.ca/Minerva-help/gen_help/login.htm', 'PopupPage','height=500,width=450,scrollbars=yes,resizable=yes'); return false" target="_blank" onmouseover="window.status='';  return true" onmouseout="window.status=''; return true" onfocus="window.status='';  return true" onblur="window.status=''; return true" class="submenulinktext2">HELP</a>
+|
+<a href="https://horizon.mcgill.ca/pban1/twbkwbis.P_Logout" accesskey="3" class="submenulinktext2">EXIT</a>
+</span>
+</p></td>
+</tr>
+</tbody></table>
+</div>
+<div class="pagetitlediv">
+<table class="plaintable" summary="This table displays title and static header displays." width="100%">
+<tbody><tr>
+<td class="pldefault">
+<img src="User%20Login_files/Log_in_Um7z.gif" align="left" class="headerImg" title="" name="Log_in" hspace="15" vspace="0" border="0" height="52" width="40">
+<h2>User Login</h2>
+</td>
+<td class="pldefault">
+&nbsp;
+</td>
+<td class="pldefault"><p class="rightaligntext">
+</p><div class="staticheaders">
+</div>
+</td>
+</tr>
+<tr>
+<td class="bg3" width="100%" colspan="3"><img src="User%20Login_files/web_transparent_Um7z.gif" alt="Transparent Image" class="headerImg" title="Transparent Image" name="web_transparent" hspace="0" vspace="0" border="0" height="3" width="10"></td>
+</tr>
+</tbody></table>
+<a name="main_content"></a>
+</div>
+<div class="pagebodydiv">
+<!--  ** END OF twbkwbis.P_OpenDoc **  -->
+<script type="text/javascript" src="User%20Login_files/jquery-1.3.2.min_Um7z.js"></script>
+<div style="display: flex; flex-direction: column; align-items: center; min-width: 40rem;">
+  <div style="font-size:35px; margin-bottom:1rem;"> Login to Minerva</div>
+  <div style="font-size:25px; margin-bottom:1rem;"> McGill's central information system</div>
+  <div style="margin-bottom:1rem;"> <div style="border:1px solid #CCC; color: #000000; padding:10px; background-color: #ffffcc; width: 800px;">
+<p><span style="margin:10px; font-size: 14pt; &gt;
+&lt;hr&gt;&lt;p&gt;&lt;span style=" margin:10px;="" font-size:="" 14pt;=""></span></p><p><span style="font-size: 14pt;">The Minerva login page has changed. Please take note of which login method you should use: </span></p>
+   <p><b>Students, Alumni, Instructors, and Staff</b> - If you <strong>have a valid McGill username and password</strong> click "Login" under Students, Alumni, Instructors, and Staff.</p>
+   <ul>
+      <li>You will need to enter your McGill username and password and follow the Two-Factor Authentication (2FA) steps.</li>
+      <li>If you've already logged into one of McGill's applications, you will automatically be directed to the home page via Single Sign-On (SSO).</li>
+   </ul>
+   <p><b>Applicants and Guests</b> - If you <b>do NOT</b> have a valid McGill username and password, enter your McGill ID and PIN and click "Login"</p>
+   <p>For any issues or troubleshooting assistance, please consult the <a href="https://webforms.mcgill.ca/Minerva-help/gen_help/login.htm">Help File</a>.</p>
+</div></div>
+
+         <style type="text/css">
+
+            table.login_table {
+            border:none;
+            margin: 30px auto;
+            }
+
+            table.login_table_guest {
+            border:none;
+            margin: 5px auto;
+            }
+
+            table.login_table_footer {
+            margin: 4px auto;
+            }
+
+            input::-webkit-input-placeholder {
+                color:    #bababa;
+            }
+            input:-moz-placeholder {
+                color:    #bababa;
+            }
+            input:-ms-input-placeholder {
+                color:    #bababa;
+            }
+
+            a.flink {
+               margin-left:5px;
+               float:left;
+               text-decoration:none;
+               white-space: nowrap;
+            }
+
+            a.flink:hover {
+            text-decoration:underline;
+            }
+
+            .fieldlabelred {
+            color:#c02015;
+            font-size:14px;
+            font-family:Arial, Helvetica, sans-serif;
+            font-style: normal;
+            font-weight: bold;
+            white-space: nowrap;
+            }
+
+            .footlabel {
+            font-size:80%;
+            }
+
+            .logintableheader {
+            display: block;
+            text-align: center;
+            color:#c02015;
+            font-size:20px;
+            font-family:Arial, Helvetica, sans-serif;
+            font-style: normal;
+            font-weight: bold;
+            }
+
+            div.fglink_help {
+              background:#fefefe;
+              position: absolute;
+              top:100px;
+              margin-left:5px;
+              text-align:left;
+              display: none;
+              padding: 10px;
+              border: 1px solid #6c91b2;
+              font-size: 90%;
+              z-index:-999;
+              width:250px;
+            }
+
+         </style>
+
+         <table style="margin:auto; padding-bottom:1rem;">
+            <tbody><tr>
+               <td id="mcg_id_td" style="width:30rem; min-width:20rem;">
+                  <table class="login_table">
+                     <tbody><tr>
+                        <td><span class="logintableheader">Students, Alumni, Instructors, and Staff</span></td>
+                     </tr>
+                  </tbody></table>
+                  <table class="login_table">
+                     <tbody><tr>
+                        <td><a href="./Main Menu.htm"><button type="button" style="padding:0 7px; height:2em; ">Login</button></a></td>
+                     </tr>
+                  </tbody></table>
+                  <table class="login_table_footer">
+                     <tbody><tr>
+                        <td><span class="footlabel"><b>When finished using Minerva, please click <strong>EXIT</strong> <br>and close your browser to protect your privacy.</b></span></td>
+                     </tr>
+                  </tbody></table>
+               </td>
+               <td align="center" style="width:3px">
+                  <div style="width:3px;height:180px;background-color:#003366;margin: 3px auto">&nbsp;</div>
+               </td>
+               <td id="mcg_un_td" style="width:30rem; min-width:20rem;">
+<form action="/pban1/twbkwbis.P_ValLogin" method="post" name="loginform" autocomplete="OFF">
+
+                  <table class="login_table">
+                     <tbody><tr>
+                       <td><span class="logintableheader">Applicants and Guests</span></td>
+                     </tr>
+                  </tbody></table>
+                     <table class="login_table_guest">
+                        <tbody><tr>
+                           <td class="login_table_guest" scope="row"><label for="UserID"><span class="fieldlabelred">McGill ID Number</span></label></td>
+                           <td class="login_table_guest"><input type="text" name="sid" size="20" maxlength="9" id="UserID" placeholder="9 digit ID number" tabindex="1" value="260806300"><div style="position: relative !important; height: 0px !important; width: 0px !important; display: initial !important; float: left !important;" data-lastpass-icon-root=""></div></td>
+                           <td>
+                              <a href="https://horizon.mcgill.ca/pban1/bzgkemlv.p_forgot_id" class="flink" id="fgidlink"><font size="3">Forgot ID?</font></a>
+                              <div class="fglink_help"><p>Your McGill ID is the <strong>9-digit number</strong> shown on your McGill ID card.</p>
+<p>If you don't remember your McGill ID, click <strong>Forgot ID?</strong></p>
+<p><strong>Applicants</strong>: Your McGill ID number was sent to you in the email acknowledgement of your application.</p>
+<p><strong>New Staff</strong>: Your McGill ID number was sent to the email address you provided when you applied.</p>
+<p><strong>Alumni</strong>: If your McGill ID was a 7-digit number when you last studied at McGill, you may be able to access Minerva by adding <strong>11</strong> at the start (e.g. <strong>11</strong>xxxxxxx).</p></div>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="login_table_guest" scope="row"><label for="PIN"><span class="fieldlabelred">Minerva PIN</span></label></td>
+                           <td class="login_table_guest"><input type="password" name="PIN" size="20" maxlength="18" id="PIN" placeholder="6-18 character PIN" tabindex="2"><div style="position: relative !important; height: 0px !important; width: 0px !important; display: initial !important; float: left !important;" data-lastpass-icon-root=""></div></td>
+                           <td>
+                              <a href="#" class="flink" id="fgpinlink"><font size="3">Forgot PIN?</font></a>
+                              <div class="fglink_help"><p>If you don't remember your Minerva PIN, enter your McGill ID and click <strong>Forgot PIN?</strong></p>
+<p><strong>Applicants and guests</strong>: For first-time login, your PIN is your <strong>date of birth</strong> in the format <strong>yymmdd</strong>, (year, month, day) e.g. 850624.</p>
+<p><strong>New Staff</strong>: You will receive your initial PIN by email.</p>
+<p><strong><font color="#dd000">Note</font></strong>: If your PIN has been reset for you, it will revert to your <b>date of birth</b> in the format <b>yymmdd</b> (year, month, day) e.g. 850624.</p></div>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td></td>
+                           <td><input type="submit" value="Login" style="padding:0 7px;" id="mcg_id_submit"></td>
+                           <td></td>
+                        </tr>
+                     </tbody></table>
+                  <table class="login_table_footer">
+                     <tbody><tr>
+                        <td><span class="footlabel">Guests include former students (non-alumni)</span></td>
+                     </tr>
+                  </tbody></table>
+</form>
+
+               </td>
+            </tr>
+         </tbody></table>
+<div style="text-align:center;padding-bottom:2rem">
+<div style="font-size:80%;"></div>
+</div>
+<div class="infotextdiv"><table class="infotexttable" summary="This layout table contains information that may be helpful in understanding the content and functionality of this page.  It could be a brief set of instructions, a description of error messages, or other special information."><tbody><tr><td class="indefault"><span class="infotext"> <span style="font-size:80%">
+This is a private information system for use by authorized personnel only.  Unauthorized access may lead to legal prosecution.  All Minerva users agree to comply with the <a href="https://www.mcgill.ca/secretariat/files/secretariat/responsible-use-of-mcgill-it-policy-on-the.pdf" target="_blank">Policy on the Responsible Use of McGill IT Resources</a>.
+<strong>Problems logging in?</strong>  Click <strong>HELP</strong> in the top right corner.
+When finished using Minerva, please click <strong>EXIT</strong>and close your browser to protect your privacy.</span></span></td></tr></tbody></table><p></p></div>
+<script language="JavaScript" type="text/javascript">
+
+         document.loginform.reset();
+
+         // HTML5 placeholder plugin version 1.01
+         // Copyright (c) 2010-The End of Time, Mike Taylor, http://miketaylr.com
+         // MIT Licensed: http://www.opensource.org/licenses/mit-license.php
+
+         (function($){
+           var hasPlaceholder = 'placeholder' in document.createElement('input');
+           var isOldOpera = $.browser.opera && $.browser.version < 10.5;
+           $.fn.placeholder = function(options) {
+             var options = $.extend({}, $.fn.placeholder.defaults, options),
+             o_left = options.placeholderCSS.left;
+             return (hasPlaceholder) ? this : this.each(function() {
+               var $this = $(this),
+                   inputVal = $.trim($this.val()),
+                   inputWidth = $this.width(),
+                   inputHeight = $this.height(),
+                   inputId = (this.id) ? this.id : 'placeholder' + (Math.floor(Math.random() * 1123456789)),
+                   placeholderText = $this.attr('placeholder'),
+                   placeholder = $('<label for='+ inputId +'>'+ placeholderText + '</label>');
+               options.placeholderCSS['width'] = inputWidth;
+               options.placeholderCSS['height'] = inputHeight;
+               options.placeholderCSS['color'] = options.placeholderCSS.color;
+               options.placeholderCSS.left = (isOldOpera && (this.type == 'email' || this.type == 'url')) ?
+                  '11%' : o_left;
+               placeholder.css(options.placeholderCSS);
+               $this.wrap(options.inputWrapper);
+               $this.attr('id', inputId).after(placeholder);
+               if (inputVal){
+                 placeholder.hide();
+               };
+               $this.focus(function(){
+                 if (!$.trim($this.val())){
+                   placeholder.hide();
+                 };
+               });
+               $this.blur(function(){
+                 if (!$.trim($this.val())){
+                   placeholder.show();
+                 };
+               });
+             });
+           };
+           $.fn.placeholder.defaults = {
+             inputWrapper: '<span style="position:relative; display:block;"></span>',
+             placeholderCSS: {
+               'font':'0.9em sans-serif',
+               'color':'#bababa',
+               'position': 'absolute',
+               'left':'5px',
+               'top':'3px',
+               'overflow-x': 'hidden',
+                'display': 'block',
+               'cursor': 'text',
+               'z-index': '100'
+             }
+           };
+
+           $('input[placeholder]').placeholder();
+                 $("a.flink").hover(
+                   function () {
+                     $(this).next().stop().animate({
+                       opacity: 1
+                     }, 400).css({'z-index':'999', 'display':'inline'});
+                   },
+                   function () {
+                     $(this).next().stop().animate({
+                       opacity: 0
+                     }, 300).css({'z-index':'-999', 'display':'none'});
+                   }
+                 )
+
+           $("#fgpinlink").click(function(){
+              if ($("#UserID").val() == '') {
+                alert('Please enter your McGill ID before clicking on Forgot PIN.');
+                return false;
+              }
+              window.location.href = "twbkwbis.P_ValLogin?buttonselected=Y&sid=" + $("#UserID").val();
+              return true;
+           });
+
+           $("#mcg_id_submit,#mcg_un_submit").click(function(){
+              if ($(this).attr("id") == "mcg_id_submit")
+                 $("#mcg_un,#mcg_pw").attr("disabled", "true");
+              else {
+
+                 var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+
+                 var emailaddressVal = $("#mcg_un").val();
+                 if(!emailReg.test(emailaddressVal)) {
+                    alert("You have entered an invalid McGill Username. Please enter it in the proper format (e.g. firstname.lastname@mcgill.ca or firstname.lastname@mail.mcgill.ca).");
+                    return false;
+                 }
+
+                 $("#UserID,#PIN").attr("disabled", "true");
+              }
+              return true;
+           });
+
+         })(jQuery);
+
+      
+// End script hiding -->
+</script>
+</div>
+
+<!--  ** START OF twbkwbis.P_CloseDoc **  -->
+<table class="plaintable" summary="This is table displays line separator at end of the page." width="100%" cellspacing="0" cellpadding="0" border="0"><tbody><tr><td class="bgtabon" width="100%" colspan="2"><img src="User%20Login_files/web_transparent_Um7z.gif" alt="Transparent Image" class="headerImg" title="Transparent Image" name="web_transparent" hspace="0" vspace="0" border="0" height="3" width="10"></td></tr></tbody></table>
+<a href="#top" onmouseover="window.status='Skip to top of page'; return true" onmouseout="window.status=''; return true" onfocus="window.status='Skip to top of page'; return true" onblur="window.status=''; return true" class="skiplinks">Skip to top of page</a>
+<div class="footerbeforediv">
+
+</div>
+<div class="footerafterdiv">
+
+</div>
+<div class="globalafterdiv">
+
+</div>
+<div class="globalfooterdiv">
+
+</div>
+<div class="pagefooterdiv">
+<span class="releasetext">Release: 8.11</span>
+</div>
+<div class="poweredbydiv">
+</div>
+<div class="div1"></div>
+<div class="div2"></div>
+<div class="div3"></div>
+<div class="div4"></div>
+<div class="div5"></div>
+<div class="div6"></div>
+</div>
+<div class="banner_copyright"> <h5><br>© 2026 Ellucian Company L.P. and its affiliates.<br>This software contains confidential and proprietary information of Ellucian or its subsidiaries.<br>Use of this software is limited to Ellucian licensees, and is subject to the terms and conditions of one or more written license agreements between Ellucian and such licensees.</h5></div>
+
+
+<div style="position: absolute !important; top: 0px !important; left: 0px !important; height: 0px !important; width: 0px !important; display: initial !important;" data-lastpass-root=""></div></body><div></div></html>
